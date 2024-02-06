@@ -11837,6 +11837,13 @@ html {
   .span_text{
     font-size: 12px !important;
   }
+   #front_page_image{
+    width: 320px !important;
+  }
+  .bg-gradient-primary-to-secondary{
+    position: relative !important;
+    left: -20px;
+  }
 }
 #web{
   
