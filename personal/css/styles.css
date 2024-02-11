@@ -14020,6 +14020,20 @@ html {
     display: flex;
     justify-content: flex-end !important;
   }
+   .poster_img {
+    height: 350px !important;
+    width: 250px !important;
+    position: relative;
+    left: 43px;
+  }
+
+  .logo_img {
+    position: relative;
+    left: 45px;
+    height: 200px;
+    width: 200px;
+  }
+
 }
 
 .redirect {
