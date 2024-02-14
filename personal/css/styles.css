@@ -14049,3 +14049,96 @@ li:first-child {
   color: #e302cc;
 
 }
+
+
+
+
+.wrapper {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 940px;
+  background: #FFF;
+  overflow-x: hidden;
+}
+
+.title {
+  text-align: center;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid gold;
+}
+
+input[type='radio'] {
+  appearance: none;
+  outline: none;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15px 29%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+input[type='radio']:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: 'Material Icons';
+  font-size: 30px;
+  color: #AAA !important;
+  transition: 150ms ease-in-out;
+}
+
+.image-wrap {
+  width: 100%;
+}
+
+.pic {
+  display: block;
+  float: left;
+}
+
+input[type='radio']:nth-child(3):before {
+  content: '\E5C3';
+}
+
+input[type='radio']:nth-child(4):before {
+  content: '\E5D2';
+}
+
+input[type='radio']:checked:before {
+  color: #000;
+}
+
+input[type='radio']:nth-child(3):checked~.image-wrap .pic {
+  margin: 5px 5px 0 0;
+  width: 308px;
+  height: 313px;
+}
+
+input[type='radio']:nth-child(4):checked~.image-wrap .pic {
+  width: 100%;
+  margin: 0 0 5px;
+}
+
+@media(max-width: 1000px) {
+  input[type='radio']:nth-child(3) {
+    display: none;
+  }
+
+  input[type='radio']:nth-child(4) {
+    margin: 0 calc(50% - 15px);
+  }
+
+  input[type='radio']:nth-child(4):before {
+    color: #000;
+  }
+
+  input[type='radio']:nth-child(3):checked~.image-wrap .pic {
+    width: 100%;
+    height: 100%;
+    margin: 0 0 5px !important;
+  }
+}
